@@ -223,6 +223,7 @@ do {
   i++;
   numero = numero + 5;
 } while (i < 8);
+return numero;
 }
     
 
