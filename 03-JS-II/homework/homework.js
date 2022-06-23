@@ -129,14 +129,15 @@ function fizzBuzz(numero) {
   if(numero%3===0 && numero%5===0) {
   return 'fizzbuzz';
   }
-  if(numero%3===0) { 
+  else if(numero%3===0) { 
   return 'fizz';
   }
-  if(numero%5===0) {
+  else if(numero%5===0) {
   return 'buzz';
   }
+  else{
    return numero;
-  
+  }
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -149,13 +150,13 @@ function operadoresLogicos(num1, num2, num3) {
   if (num1<0 || num2<0 || num3<0){
     return "Hay negativos";
   }
-  if (num1===0 || num2===0 || num3===0){
+  else if (num1===0 || num2===0 || num3===0){
     return "Error";
   }
-  if (num1>num2 && num1>num3 && num1>0){
+  else if (num1>num2 && num1>num3 && num1>0){
     return "Número 1 es mayor y positivo";
   }
-   if (num3>num1 && num3>num2){
+  else if (num3>num1 && num3>num2){
     num3++;
     return num3;
   } 
