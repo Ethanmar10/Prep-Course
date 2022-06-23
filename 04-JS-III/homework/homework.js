@@ -94,8 +94,9 @@ function promedioResultadosTest(resultadosTest) {
   // Tu código:
   let prom=0;
   for (let i=0; i<resultadosTest; i++){
-    prom=(prom+resultadosTest[i])/resultadosTest.lenght;
+    prom=prom+resultadosTest[i];
   }
+  return prom/resultadosTest.lenght;
 }
 
 
@@ -103,10 +104,10 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-  let grande=numeros;
   for(let i=0; i<numeros.lenght; i++){
-      numeros[i]>grande;
+      math.max(numeros[i]);
   }
+  return math.max;
 }
 
 
