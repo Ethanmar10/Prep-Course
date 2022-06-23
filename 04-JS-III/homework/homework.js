@@ -92,11 +92,7 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-  let prom=0;
-  for (let i=0; i<resultadosTest; i++){
-    prom=prom+resultadosTest[i];
-  }
-  return prom/resultadosTest.lenght;
+  return agregarNumeros(resultadosTest) / resultadosTest.length;
 }
 
 
@@ -158,7 +154,13 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  
+  var numero=n.toString();
+  if(numero[0]==="9"){
+    return true;
+  }
+  else{
+    return false;
+  }
 }
 
 
@@ -188,6 +190,9 @@ function mesesDelAño(array) {
   }
   if(nuevoArray.length<3) {
     return "No se encontraron los meses pedidos";
+  }
+  else {
+    return nuevoArray;
   }
 }
 
