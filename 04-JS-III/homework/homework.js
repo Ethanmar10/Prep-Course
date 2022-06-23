@@ -27,7 +27,7 @@ function incrementarPorUno(array) {
   // y devuelve el array
   // Tu código:
  for (let i; i<array.length; i++){
-  array[i]=array[i+1]
+  array[i]=array[i]+1;
  }
  return array;
 }
