@@ -67,9 +67,9 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  for (let i=0; i<array.length; i++){
-    if (array[i]===elemento);{
-    return true;
+  for(var i= 0; i<array.length; i++) {
+    if(array[i] === elemento) {
+      return true;
     }
   }
   return false;
@@ -105,7 +105,7 @@ function numeroMasGrande(numeros) {
   // Tu código:
   let grande=numeros;
   for(let i=0; i<numeros.lenght; i++){
-    
+      numeros[i]>grande;
   }
 }
 
