@@ -109,13 +109,13 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-    var max = numeros[0];
-    for(var i = 1; i < numeros.length; i++) {
-      if(numeros[i] > max) { 
-        max = numeros[i];
-       }
+  var maximo = numeros[0];
+  for(var i = 1; i < numeros.length; i++) {
+    if(numeros[i] > maximo) { 
+      maximo = numeros[i];
     }
-    return maximo;
+  }
+  return maximo;
 }
 
 
@@ -141,7 +141,7 @@ function cuentoElementos(arreglo){
   //Escribe tu código aquí
   var resul=0;
   for (var i=0; i<array.length; i++) {
-     if(arreglo[i]<18){
+     if(arreglo[i]>19){
        resul=resul+1;
      }
   }
@@ -192,9 +192,9 @@ function mesesDelAño(array) {
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
   var nuevoArray = [];
-  for(var i= 0; i<array.length; i++) {
+  for(let i= 0; i<array.length; i++) {
     if(array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre") {
-      nuevoArray[i]=array[i];
+      nuevoArray.push(array[i]);
     }
   }
   if(nuevoArray.length < 3) {
