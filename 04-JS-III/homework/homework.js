@@ -59,11 +59,7 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-    var nuevoA=[];
-    for (var i=0; i< array.lenght; i++) {
-      nuevoA[i]=" " + array[i] + " ";
-    }    
-    return nuevoA;
+  return palabras.join(' ');
 }
 
 
@@ -139,13 +135,13 @@ function multiplicarArgumentos() {
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-  var resul=0;
-  for (var i=0; i<array.length; i++) {
-     if(arreglo[i]>19){
-       resul=resul+1;
-     }
+  let contador = 0;
+  for (let i = 0; i < arreglo.length ; i++) {
+    if(arreglo[i] > 19){
+      contador++;
+    }
   }
-  return resul;
+  return contador;
 }
 
 
@@ -210,13 +206,13 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
-  var nuevoA = [];
-  for(var i= 0; i < array.length; i++) {
+  var nuevoArray = [];
+  for(let i= 0; i < array.length; i++) {
     if(array[i] > 100) {
-      nuevoA[i]=array[i];
+      nuevoArray.push(array[i]);
     }
   }
-  return nuevoA;
+  return nuevoArray;
 }
 
 
