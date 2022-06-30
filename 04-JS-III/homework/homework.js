@@ -71,11 +71,12 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-    for(var i=0; i<array.lenght; i++){
-      if(array[i]===elemento)
-        return true;
+  for(var i = 0; i < array.length; i++) {
+    if(array[i] === elemento) {
+      return true;
     }
-    return false;
+  }
+  return false;
 }
 
 
@@ -83,11 +84,11 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
-    var resul=0;
-    for(var i=0; i<numeros.lenght; i++){
-     resul=resul+numeros[i];
-    }
-    return resul;
+  var resul= 0;
+  for(var i = 0; i < numeros.length; i++) {
+    resul= resul + numeros[i];
+  }
+  return resul;
 }
 
 
@@ -108,13 +109,13 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-    var max=0;
-    for (var i=0; i<array.length; i++) {
-      if(numeros[i]>max){
-        max=numeros[i];
-      }   
+    var max = numeros[0];
+    for(var i = 1; i < numeros.length; i++) {
+      if(numeros[i] > max) { 
+        max = numeros[i];
+       }
     }
-    return max;
+    return maximo;
 }
 
 
@@ -215,7 +216,7 @@ function mayorACien(array) {
       nuevoA[i]=array[i];
     }
   }
-  return nuevoArray
+  return nuevoA;
 }
 
 
